@@ -1,0 +1,60 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    padding: 0 30%;
+    background: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 10px 30px;
+    transition: background-color 0.5s;
+    color:white;
+}
+
+.navbar a:hover {
+    background: blueviolet;
+}
+
+.grid-container {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+    grid-gap: 10px;
+}
+
+.grid-container > div {
+}
+
+.preview-image {
+    height: 260px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.shadow {
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
+    padding: 5px;
+}
+
+.add-card-button {
+    background: cornflowerblue;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.5s;
+    font-size:25px;
+}
+
+.add-card-button:hover {
+    background: blueviolet;
+}

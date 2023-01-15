@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Orders</title>
+    <link rel="stylesheet" href="./css/main.css">
+
+    <style>
+        body {
+            background: #ddd;
+            font-family: sans-serif;
+        }
+
+        .card {
+            max-width: 950px;
+            width: 90%;
+            box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 1rem;
+            border: transparent;
+            display: grid;
+            grid-template-columns: 2fr 0.5fr;
+            margin: auto auto 40px;
+        }
+
+        .cart {
+            background-color: #fff;
+            padding: 4vh 5vh;
+            border-bottom-left-radius: 1rem;
+            border-top-left-radius: 1rem;
+        }
+
+        .title b {
+            font-size: 1.5rem;
+        }
+
+        .col-2, .col {
+            padding: 0 1vh;
+        }
+
+        img {
+            width: 3.5rem;
+        }
+
+
+        h5 {
+            margin-top: 4vh;
+        }
+
+        hr {
+            margin-top: 1.25rem;
+        }
+
+        .container {
+            margin-top: 20px;
+        }
+
+        .product {
+            display: grid;
+            justify-content: space-between;
+            align-items: center;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            padding: 1vh 0;
+        }
+
+        .align-right {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar">
+    <a href="./index.html">Products</a>
+    <a href="./cart.html">Cart</a>
+    <a href="./orders.html">Orders</a>
+</div>
+
+<div class="container">
+
+
+    <div class="card">
+        <div class="cart">
+
+            <div class="product">
+                <div class="">
+                    <img class="img-fluid" src="img/product2.jpg"
+                         alt="product-img">
+                </div>
+                <div class="">
+                    <div class="row text-muted">RED MAMBA</div>
+                    <div class="row">BAGS</div>
+                </div>
+                <div class="">
+                    2
+                </div>
+                <div class="align-right">1000 lei</div>
+
+            </div>
+
+
+            <div class="product">
+                <div class="">
+                    <img class="img-fluid" src="img/product1.jpg"
+                         alt="product-img">
+                </div>
+                <div class="">
+                    <div class="row text-muted">Red Fire</div>
+                    <div class="row">SHOES</div>
+                </div>
+                <div class="">
+                    1
+                </div>
+                <div class="align-right">500 lei</div>
+
+            </div>
+
+
+            <div class="product">
+                <div class=>
+                    <img class="img-fluid" src="img/product4.jpg"
+                         alt="product-img">
+                </div>
+                <div class="">
+                    <div class="row text-muted">Black Passion</div>
+                    <div class="row">BAGS</div>
+                </div>
+                <div class="">
+                    1
+                </div>
+                <div class="align-right">1500 lei</div>
+            </div>
+
+
+        </div>
+        <div style="display:grid;align-content: center; justify-content: center">
+            <div class="">
+                <div class="col">TOTAL PRICE</div>
+                <div class="col text-right">
+                    4000 lei
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="card">
+        <div class="cart">
+
+            <div class="product">
+                <div class="col-2">
+                    <img class="img-fluid"
+                         src="img/product6.jpg"
+                         alt="product-img">
+                </div>
+                <div class="">
+                    <div class="row text-muted">Red Kiss</div>
+                    <div class="row">BAGS</div>
+                </div>
+                <div class="">
+                    1
+                </div>
+                <div class="align-right">1300 lei</div>
+
+            </div>
+
+
+            <div class="product">
+                <div class="">
+                    <img class="img-fluid"
+                         src="img/product3.jpg"
+                         alt="product-img">
+                </div>
+                <div class="">
+                    <div class="row text-muted">Classy Women</div>
+                    <div class="row">SHOES</div>
+                </div>
+                <div class="">
+                    3
+                </div>
+                <div class="align-right">2100 lei</div>
+
+            </div>
+
+
+        </div>
+        <div style="display:grid;align-content: center; justify-content: center">
+            <div class="">
+                <div class="">TOTAL PRICE</div>
+                <div class="">
+                    3400 lei
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+</body>
+</html>

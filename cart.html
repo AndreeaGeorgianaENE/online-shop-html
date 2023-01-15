@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cart</title>
+    <link rel="stylesheet" href="./css/main.css">
+
+    <style>
+        body {
+            background: #ddd;
+            font-family: sans-serif;
+        }
+
+        .title {
+            margin-bottom: 5vh;
+        }
+
+        .card {
+            margin: auto;
+            width: 90%;
+            box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 1rem;
+            border: transparent;
+        }
+
+        .cart {
+            background-color: #fff;
+            padding: 4vh 5vh;
+            border-bottom-left-radius: 1rem;
+            border-top-left-radius: 1rem;
+        }
+
+        .summary {
+            background-color: #ddd;
+            border-top-right-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+            color: rgb(65, 65, 65);
+            display: flex;
+            flex-flow: column;
+        }
+
+        .title b {
+            font-size: 1.5rem;
+        }
+
+
+        a {
+            padding: 0 1vh;
+        }
+
+        .close {
+            margin-left: auto;
+            font-size: 0.7rem;
+            text-decoration: none;
+        }
+
+        img {
+            width: 3.5rem;
+        }
+
+        .back-to-shop {
+            margin-top: 4.5rem;
+        }
+
+        h5 {
+            margin-top: 4vh;
+        }
+
+        hr {
+            margin-top: 1.25rem;
+        }
+
+        form {
+            padding: 2vh 0;
+        }
+
+        input, select {
+            border: 1px solid rgba(0, 0, 0, 0.137);
+            padding: 1vh;
+            margin-bottom: 1vh;
+            outline: none;
+            background-color: rgb(247, 247, 247);
+        }
+
+        input:focus::-webkit-input-placeholder {
+            color: transparent;
+        }
+
+        .btn {
+            background-color: #000;
+            border-color: #000;
+            color: white;
+            width: 100%;
+            font-size: 0.7rem;
+            margin-top: 4vh;
+            padding: 1vh;
+            border-radius: 0;
+        }
+
+        .btn:focus {
+            box-shadow: none;
+            outline: none;
+            color: white;
+            -webkit-box-shadow: none;
+            -webkit-user-select: none;
+            transition: none;
+        }
+
+        .btn:hover {
+            color: white;
+        }
+
+        a {
+            color: black;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: none;
+        }
+
+        #code {
+            background-image: linear-gradient(to left, rgba(255, 255, 255, 0.253), rgba(255, 255, 255, 0.185)), url("https://img.icons8.com/small/16/000000/long-arrow-right.png");
+            background-repeat: no-repeat;
+            background-position-x: 95%;
+            background-position-y: center;
+        }
+
+        .produse ~ div:nth-of-type(1) {
+            border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+        }
+
+        .container {
+            display: grid;
+            align-items: center;
+            min-height: 60vh;
+            margin-top: 30px;
+        }
+
+        .second-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .product {
+            display: grid;
+            justify-content: space-between;
+            align-items: center;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            padding: 1vh 0;
+        }
+
+    </style>
+
+
+</head>
+<body>
+<div class="navbar">
+    <a href="./index.html">Products</a>
+    <a href="./cart.html">Cart</a>
+    <a href="./orders.html">Orders</a>
+</div>
+
+
+<div class="container">
+    <div class="card p-0">
+        <div class="second-container">
+            <div class="cart">
+                <div class="title">
+                    <div class="row">
+                        <div class="col"><h4><b>Shopping Cart</b></h4></div>
+                    </div>
+                </div>
+                <div class="produse">
+
+                    <div class="product">
+                        <div class="">
+                            <img class="img-fluid"
+                                 src="img/product2.jpg"
+                                 alt="product-img"/>
+                        </div>
+                        <div class="">
+                            <div class="row text-muted">RED MAMBA</div>
+                            <div class="row">BAGS</div>
+                        </div>
+                        <div class="">
+                            <a href="#"
+                               style="text-decoration:none">-</a>
+                            2
+                            <a href="#"
+                               style="text-decoration:none">+</a>
+                        </div>
+                        <div class="">2000 lei</div>
+                        <div class="" style="display: flex;flex-flow: column-reverse;justify-content: center">
+                            <a href="#" class="close">x</a></div>
+                    </div>
+
+                    <div class="product">
+                        <div class="">
+                            <img class="img-fluid"
+                                 src="img/product1.jpg"
+                                 alt="product-img"/>
+                        </div>
+                        <div class="">
+                            <div class="row text-muted">Red Fire
+                            </div>
+                            <div class="row">SHOES</div>
+                        </div>
+                        <div class="">
+                            <a href="#"
+                               style="text-decoration:none">-</a>
+                            1
+                            <a href="#"
+                               style="text-decoration:none">+</a>
+                        </div>
+                        <div class="">500 lei</div>
+                        <div class="" style="display: flex;flex-flow: column-reverse;justify-content: center">
+                            <a href="#" class="close">x</a></div>
+                    </div>
+
+                    <div class="product">
+                        <div class="">
+                            <img class="img-fluid"
+                                 src="img/product4.jpg"
+                                 alt="product-img"/>
+                        </div>
+                        <div class="">
+                            <div class="row text-muted">
+                                Black Passion
+                            </div>
+                            <div class="row">BAGS</div>
+                        </div>
+                        <div class="">
+                            <a href="#"
+                               style="text-decoration:none">-</a>
+                            2
+                            <a href="#"
+                               style="text-decoration:none">+</a>
+                        </div>
+                        <div class="">1500 lei</div>
+                        <div class="" style="display: flex;flex-flow: column-reverse;justify-content: center">
+                            <a href="#" class="close">x</a></div>
+                    </div>
+
+                </div>
+
+                <div class="back-to-shop"><a href="index.html">&leftarrow;<span
+                        class="text-muted">Back to shop</span></a></div>
+            </div>
+            <div style="padding: 2vh">
+                <div class="summary">
+                    <div style="display: flex;">
+                        <input type=text placeholder="Nume">
+                        <input type=text placeholder="Prenume">
+                    </div>
+                    <div style="display: flex;">
+                        <input type=text placeholder="Email">
+                        <input type=text placeholder="Telefon mobil">
+                    </div>
+                    <div style="display: flex;">
+                        <select name="judet">
+                            <option disabled selected>Judet</option>
+                            <option value=a>Arges
+                            <option value=b>Dambovita
+                            <option value=c>Dolj
+
+                            <option value=d>Prahova
+                        </select>
+
+                        <select name=oras>
+                            <option disabled selected>Oras</option>
+                            <option value=a>Pitesti
+                            <option value=b>Targoviste
+                            <option value=c>Craiova
+
+                            <option value=d>Ploiesti
+                        </select>
+                    </div>
+                    <b></b><input type=text placeholder="Strada, numar ">
+                    Livrare prin <select name=Livrare>
+                    <option value=a>Posta Romana
+
+                    <option value=b>Curierat rapid (taxa 10 RON)
+                </select>
+
+                    <label for="livrare"> Metoda de plata a produsului</label>
+                    <select id="livrare" name=Livrare>
+                        <option value=a>numerar la livrare</option>
+                        <option value=b>transfer bancar</option>
+                    </select>
+                </div>
+                <div class="summary">
+
+                    <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
+                        <div class="col">TOTAL PRICE: 4000 lei</div>
+
+
+                    </div>
+                    <a href="orders.html">
+                        <button class="btn">BUY</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+</body>
+</html>
