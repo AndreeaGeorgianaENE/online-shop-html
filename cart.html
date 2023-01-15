@@ -119,17 +119,6 @@
             text-decoration: none;
         }
 
-        #code {
-            background-image: linear-gradient(to left, rgba(255, 255, 255, 0.253), rgba(255, 255, 255, 0.185)), url("https://img.icons8.com/small/16/000000/long-arrow-right.png");
-            background-repeat: no-repeat;
-            background-position-x: 95%;
-            background-position-y: center;
-        }
-
-        .produse ~ div:nth-of-type(1) {
-            border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
-        }
-
         .container {
             display: grid;
             align-items: center;
@@ -156,9 +145,13 @@
 </head>
 <body>
 <div class="navbar">
-    <a href="./index.html">Products</a>
-    <a href="./cart.html">Cart</a>
-    <a href="./orders.html">Orders</a>
+    <table cellspacing=5 cellpadding=10 align=center>
+        <tr>
+            <th><a href="./index.html">Products</a></th>
+            <th><a href="./cart.html">Cart</a></th>
+            <th><a href="./orders.html">Orders</a></th>
+        </tr>
+    </table>
 </div>
 
 
